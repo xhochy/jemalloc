@@ -15,6 +15,10 @@
 #include <libunwind.h>
 #endif
 
+#ifndef O_CLOEXEC
+#define O_CLOEXEC 0
+#endif
+
 #ifdef JEMALLOC_PROF_LIBGCC
 /*
  * We have a circular dependency -- jemalloc_internal.h tells us if we should

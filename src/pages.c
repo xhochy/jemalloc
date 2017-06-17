@@ -12,6 +12,10 @@
 #include <sys/sysctl.h>
 #endif
 
+#ifndef O_CLOEXEC
+#define O_CLOEXEC 0
+#endif
+
 /******************************************************************************/
 /* Data. */
 
